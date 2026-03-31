@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 
@@ -13,5 +13,9 @@ export class App {
 
   loadRemoteApp(): void {
     this.router.navigate(['/remote']);
+  }
+
+  loadMfRemoteApp(): void {
+    this.router.navigate(['/mf-remote']);
   }
 }
